@@ -95,7 +95,8 @@ class GeneratorData(object):
         for c in range(len(string)):
             tensor[c] = self.all_characters.index(string[c])
         if self.use_cuda:
-            return torch.tensor(tensor).cuda()
+            return tensor.clone().detach().cuda()
+            # return torch.tensor(tensor).cuda()
         else:
             return torch.tensor(tensor)
 

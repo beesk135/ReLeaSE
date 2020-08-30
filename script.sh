@@ -11,3 +11,5 @@ conda install pytorch=0.4.1 torchvision=0.2.1 -c pytorch
 pip install -r pip_requirements.txt
 # Add new kernel to the list of jupyter notebook kernels
 python -m ipykernel install --user --name release --display-name ReLeaSE
+
+# data.py Policy gradient...:  27%|██▋       | 4/15 [00:34<01:35,  8.71s/it]/content/ReLeaSE/release/data.py:98: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
